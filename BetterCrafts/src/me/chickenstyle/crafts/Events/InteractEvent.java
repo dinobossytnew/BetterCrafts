@@ -60,7 +60,7 @@ public class InteractEvent implements Listener{
 						}
 						if (equals == items.size()) {
 							if (recipe.hasPermission() == true) {
-								if (!player.hasPermission("BetterCrafts." + recipe.getId())) {
+								if (!player.hasPermission("BetterCrafts." + recipe.getId()) && !player.hasPermission("BetterCrafts.Admin")) {
 									player.sendMessage(Message.NO_PERM_CRAFT.getMSG());
 									return;
 								}
@@ -95,6 +95,5 @@ public class InteractEvent implements Listener{
 				}
 			}
 		}
-		
 	}
 }
