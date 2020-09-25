@@ -43,6 +43,8 @@ public class BetterCraftsCommand implements CommandExecutor {
 				sender.sendMessage(Utils.color("&7> &f/bc giverecipe   &7//Command to give result recipe to player"));
 				sender.sendMessage("");
 				sender.sendMessage(Utils.color("&7> &f/bc reload   &7//Command to reload the configs"));
+				sender.sendMessage("");
+				sender.sendMessage(Utils.color("&7> &f/recipes   &7// Shows all the recipe in a GUI!"));
 				sender.sendMessage(Utils.color("&7-----------------------------------------------------"));
 			break;
 			// /bcs giveItem {player} {id}

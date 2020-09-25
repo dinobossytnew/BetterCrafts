@@ -65,6 +65,11 @@ public class Main extends JavaPlugin{
 		getCommand("bettercrafts").setTabCompleter(new CraftsTab());
 		getCommand("recipes").setExecutor(new RecipesCommand());
 		
+		//Getting data
+        int pluginId = 8954;
+        Metrics metrics = new Metrics(this, pluginId);
+        metrics.addCustomChart(new Metrics.SimplePie("chart_id", () -> "My value"));
+		
 		System.out.println(Utils.color("&aBetterCraft has been enabled!"));
 	} 
 	
